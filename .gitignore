@@ -1,0 +1,11 @@
+# KiCad transient/local files
+*.lck
+~*.kicad_*
+*.kicad_prl
+*.bak
+*-backups/
+fp-info-cache
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
