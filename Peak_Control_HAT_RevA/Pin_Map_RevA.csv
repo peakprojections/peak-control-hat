@@ -1,15 +1,22 @@
 Function,BCM GPIO,Pi Physical Pin,Notes
-Projector Output,17,11,24V high-side output CH1
-Viewer Output,27,13,24V high-side output CH2
-Aux1 Output,22,15,24V high-side output CH3
-Aux2 Output,23,16,24V high-side output CH4
+OUT1 Enable,16,36,Default Projector 1; GPIO high = 24V output on
+OUT2 Enable,19,35,Default Viewer 1; GPIO high = 24V output on
+OUT3 Enable,22,15,Default Projector 2 or Aux scheduled channel
+OUT4 Enable,23,16,Default Viewer 2 or Aux reboot/normally-on channel
 Proof Input 1,24,18,Projector current proof input
 Proof Input 2,25,22,Future field input
-IR 1,18,12,Hardware PWM capable
-IR 2,13,33,Hardware PWM capable
+IR 1 TX,18,12,Hardware PWM capable
+IR 2 TX,13,33,Hardware PWM capable
 Fan Control,12,32,PWM/control candidate
-Fan Tach,16,36,Tach input candidate
-I2C SDA,2,3,Shared onboard/expansion bus
-I2C SCL,3,5,Shared onboard/expansion bus
+Fan Tach,26,37,Tach input candidate
+TPS U1 SEL,5,29,Select OUT1/OUT2 on U1 SNS diagnostics
+TPS U2 SEL,6,31,Select OUT3/OUT4 on U2 SNS diagnostics
+TPS U1 FLT,20,38,Active-low open-drain fault input with 3.3V pull-up
+TPS U2 FLT,21,40,Active-low open-drain fault input with 3.3V pull-up
+I2C SDA,2,3,Shared onboard ADC/expansion bus
+I2C SCL,3,5,Shared onboard ADC/expansion bus
 HAT ID SDA,0,27,Reserved for future HAT EEPROM
 HAT ID SCL,1,28,Reserved for future HAT EEPROM
+Reserved / IR RX candidate,17,11,Keep available for future IR receiver or expansion
+Reserved,4,7,Available future GPIO
+Reserved,27,13,Available future GPIO
