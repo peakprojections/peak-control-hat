@@ -1,0 +1,15 @@
+Function,BCM GPIO,Pi Physical Pin,Notes
+Projector Output,17,11,24V high-side output CH1
+Viewer Output,27,13,24V high-side output CH2
+Aux1 Output,22,15,24V high-side output CH3
+Aux2 Output,23,16,24V high-side output CH4
+Proof Input 1,24,18,Projector current proof input
+Proof Input 2,25,22,Future field input
+IR 1,18,12,Hardware PWM capable
+IR 2,13,33,Hardware PWM capable
+Fan Control,12,32,PWM/control candidate
+Fan Tach,16,36,Tach input candidate
+I2C SDA,2,3,Shared onboard/expansion bus
+I2C SCL,3,5,Shared onboard/expansion bus
+HAT ID SDA,0,27,Reserved for future HAT EEPROM
+HAT ID SCL,1,28,Reserved for future HAT EEPROM
