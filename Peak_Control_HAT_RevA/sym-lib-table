@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "Peak_Control_HAT_RevA-cache") (type "Legacy") (uri "C:/Users/jfry/Peak/peak-control-hat/Peak_Control_HAT_RevA/Peak_Control_HAT_RevA-cache.lib") (options "") (descr "Legacy project cache library"))
+)
