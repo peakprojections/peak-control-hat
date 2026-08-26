@@ -1313,6 +1313,121 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(text "U1 FLT / U2 FLT -> 3.3V pull-up, dedicated Pi inputs"
 		(exclude_from_sim no)
@@ -1557,6 +1672,12 @@
 		(uuid "04f54fdc-757d-4da8-992e-8d9d23fa5ac1")
 	)
 	(junction
+		(at 105.41 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1a6266ff-20c7-4b6c-890d-d0559ef83941")
+	)
+	(junction
 		(at 66.04 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1567,6 +1688,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4674a10c-7c14-46ba-b3a2-3bbde361194c")
+	)
+	(junction
+		(at 105.41 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6342f6f5-8e0b-4cad-b450-c574e4e8f372")
 	)
 	(junction
 		(at 153.67 30.48)
@@ -1615,12 +1742,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a50f6895-4b83-4f5c-857c-10f73509c5ac")
-	)
-	(junction
-		(at 245.11 45.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a6736528-1ffb-4451-9972-f8dfe3d0b69f")
 	)
 	(junction
 		(at 99.06 30.48)
@@ -1794,6 +1915,16 @@
 	)
 	(wire
 		(pts
+			(xy 105.41 30.48) (xy 114.3 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cf184e9-0816-4e9a-a124-88a9d5fcbc30")
+	)
+	(wire
+		(pts
 			(xy 217.17 40.64) (xy 228.6 40.64)
 		)
 		(stroke
@@ -1861,26 +1992,6 @@
 			(type default)
 		)
 		(uuid "38287fe4-8e60-4e9a-aee5-7e0c507d52db")
-	)
-	(wire
-		(pts
-			(xy 245.11 55.88) (xy 255.27 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3957da0a-4428-476e-87c7-113505bac76d")
-	)
-	(wire
-		(pts
-			(xy 245.11 45.72) (xy 261.62 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3aba6c29-627a-41a5-9cae-87e8fb909371")
 	)
 	(wire
 		(pts
@@ -2074,6 +2185,16 @@
 	)
 	(wire
 		(pts
+			(xy 105.41 48.26) (xy 114.3 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7de74f0d-087c-4d65-8e9c-4cb88c1dbcc5")
+	)
+	(wire
+		(pts
 			(xy 220.98 29.21) (xy 226.06 29.21)
 		)
 		(stroke
@@ -2084,7 +2205,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 48.26) (xy 114.3 48.26)
+			(xy 99.06 48.26) (xy 105.41 48.26)
 		)
 		(stroke
 			(width 0)
@@ -2164,7 +2285,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 30.48) (xy 114.3 30.48)
+			(xy 99.06 30.48) (xy 105.41 30.48)
 		)
 		(stroke
 			(width 0)
@@ -2642,16 +2763,6 @@
 		)
 		(uuid "1da24609-ba85-4267-8ffb-8b3e135b2b68")
 	)
-	(label "VDD_NODE"
-		(at 261.62 45.72 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1dac8237-9367-4943-8e46-24c1c8158a92")
-	)
 	(label "FIELD_GND"
 		(at 223.52 57.15 0)
 		(effects
@@ -2823,7 +2934,7 @@
 		(uuid "e030294f-f588-4488-98ff-b982be31bf9e")
 	)
 	(label "FIELD_GND"
-		(at 255.27 55.88 0)
+		(at 245.11 48.26 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3378,240 +3489,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 149.86 76.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-000000000011")
-		(property "Reference" "R11"
-			(at 151.638 75.0316 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "13.7k 1% ILIM1 (~1.5A nominal)"
-			(at 151.638 77.343 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 149.86 76.2 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 149.86 76.2 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 149.86 76.2 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "de479669-b9f5-470d-824e-3daf29874786")
-		)
-		(pin "1"
-			(uuid "f81edc2d-18e4-40a6-a0a6-60ca592d333a")
-		)
-		(instances
-			(project "Peak_Control_HAT_RevA"
-				(path "/9c1b5da0-5e63-41fb-bcaa-467d2fbd29a9"
-					(reference "R11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 193.04 76.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-000000000012")
-		(property "Reference" "R12"
-			(at 194.818 75.0316 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "13.7k 1% ILIM2 (~1.5A nominal)"
-			(at 194.818 77.343 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 193.04 76.2 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 193.04 76.2 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 193.04 76.2 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "44d988fc-76ac-495e-9c85-294ca4997805")
-		)
-		(pin "2"
-			(uuid "aa788ad3-cc66-4449-9127-9054e2bc440c")
-		)
-		(instances
-			(project "Peak_Control_HAT_RevA"
-				(path "/9c1b5da0-5e63-41fb-bcaa-467d2fbd29a9"
-					(reference "R12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 171.45 83.82 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-000000000013")
-		(property "Reference" "R13"
-			(at 173.228 82.6516 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "499R 1% SNS"
-			(at 173.228 84.963 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 171.45 83.82 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 171.45 83.82 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 171.45 83.82 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6c9b81a8-a035-41d4-bec1-18b30e0dae89")
-		)
-		(pin "2"
-			(uuid "d29052ed-875d-4850-ad49-833fc44d5f44")
-		)
-		(instances
-			(project "Peak_Control_HAT_RevA"
-				(path "/9c1b5da0-5e63-41fb-bcaa-467d2fbd29a9"
-					(reference "R13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Peak_Control_HAT:TPS272C45C")
 		(at 175.26 125.73 0)
 		(unit 1)
@@ -3760,6 +3637,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 105.41 30.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2219d5c5-b021-486f-9f28-2cd50babf1e3")
+		(property "Reference" "#FLG02"
+			(at 105.41 28.575 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 105.41 25.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 105.41 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 105.41 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "522978b7-e1f1-4aea-ad47-0ae15097ca06")
+		)
+		(instances
+			(project "Peak_Control_HAT_RevA"
+				(path "/9c1b5da0-5e63-41fb-bcaa-467d2fbd29a9"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 228.6 36.83 0)
 		(unit 1)
@@ -3836,88 +3791,6 @@
 			(project "Peak_Control_HAT_RevA"
 				(path "/9c1b5da0-5e63-41fb-bcaa-467d2fbd29a9"
 					(reference "R1.3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 245.11 52.07 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "40dd28b1-6a13-424c-ad98-8a6882025633")
-		(property "Reference" "C3"
-			(at 248.92 50.7999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1uF"
-			(at 248.92 53.3399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 246.0752 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 245.11 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 245.11 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2bd355c1-7768-43f2-aedd-f6c182dd1616")
-		)
-		(pin "2"
-			(uuid "459f39d4-69cf-45d6-8da6-32b5fbefacac")
-		)
-		(instances
-			(project "Peak_Control_HAT_RevA"
-				(path "/9c1b5da0-5e63-41fb-bcaa-467d2fbd29a9"
-					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -4246,6 +4119,84 @@
 			(project "Peak_Control_HAT_RevA"
 				(path "/9c1b5da0-5e63-41fb-bcaa-467d2fbd29a9"
 					(reference "R1.4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 105.41 48.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fa32a5e7-2403-475e-b519-c7a321f3f726")
+		(property "Reference" "#FLG01"
+			(at 105.41 46.355 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 105.41 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 105.41 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 105.41 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b3852370-a796-41a1-bdc5-fb356029c628")
+		)
+		(instances
+			(project "Peak_Control_HAT_RevA"
+				(path "/9c1b5da0-5e63-41fb-bcaa-467d2fbd29a9"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)

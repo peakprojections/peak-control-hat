@@ -1,13 +1,7 @@
-ERC report (2026-08-26T19:14:33, Encoding UTF8)
+ERC report (2026-08-26T19:36:52, Encoding UTF8)
 Report includes: Errors, Warnings, Exclusions
 
 ***** Sheet /
-[pin_not_connected]: Pin not connected
-    ; error
-    @(5900 mils, 2850 mils): Symbol R11 Pin 1 [Passive, Line]
-[pin_not_connected]: Pin not connected
-    ; error
-    @(5900 mils, 3150 mils): Symbol R11 Pin 2 [Passive, Line]
 [pin_to_pin]: Pins of type Power output and Power output are connected
     ; error
     @(6200 mils, 1150 mils): Symbol U1 Pin 1 [OUT1, Power output, Line]
@@ -44,19 +38,10 @@ Report includes: Errors, Warnings, Exclusions
     @(6200 mils, 5000 mils): Symbol U2 Pin 7 [OUT2, Power output, Line]
 [pin_not_connected]: Pin not connected
     ; error
-    @(6750 mils, 3150 mils): Symbol R13 Pin 1 [Passive, Line]
-[pin_not_connected]: Pin not connected
-    ; error
-    @(6750 mils, 3450 mils): Symbol R13 Pin 2 [Passive, Line]
-[pin_not_connected]: Pin not connected
-    ; error
     @(6800 mils, 5700 mils): Symbol U2 Pin 25 [EP_GND, Power input, Line]
 [power_pin_not_driven]: Input Power pin not driven by any Output Power pins
     ; error
     @(6800 mils, 5700 mils): Symbol U2 Pin 25 [EP_GND, Power input, Line]
-[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
-    ; error
-    @(6900 mils, 2300 mils): Symbol U1 Pin 17 [GND, Power input, Line]
 [pin_not_connected]: Pin not connected
     ; error
     @(6900 mils, 5700 mils): Symbol U2 Pin 17 [GND, Power input, Line]
@@ -75,21 +60,9 @@ Report includes: Errors, Warnings, Exclusions
 [power_pin_not_driven]: Input Power pin not driven by any Output Power pins
     ; error
     @(7100 mils, 4200 mils): Symbol U2 Pin 23 [VS, Power input, Line]
-[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
-    ; error
-    @(7600 mils, 1150 mils): Symbol U1 Pin 8 [VS, Power input, Line]
 [pin_not_driven]: Input pin not driven by any Output pins
     ; error
     @(7600 mils, 1500 mils): Symbol U1 Pin 13 [SEL, Input, Line]
-[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
-    ; error
-    @(7600 mils, 1800 mils): Symbol U1 Pin 19 [VDD, Power input, Line]
-[pin_not_connected]: Pin not connected
-    ; error
-    @(7600 mils, 2850 mils): Symbol R12 Pin 1 [Passive, Line]
-[pin_not_connected]: Pin not connected
-    ; error
-    @(7600 mils, 3150 mils): Symbol R12 Pin 2 [Passive, Line]
 [pin_not_connected]: Pin not connected
     ; error
     @(7600 mils, 4550 mils): Symbol U2 Pin 8 [VS, Power input, Line]
@@ -164,10 +137,10 @@ Report includes: Errors, Warnings, Exclusions
     @(7600 mils, 5300 mils): Symbol U2 Pin 21 [ILIM1, Input, Line]
 [unconnected_wire_endpoint]: Unconnected wire endpoint
     ; warning
-    @(3900 mils, 1200 mils): Horizontal Wire, length 600 mils
+    @(4150 mils, 1200 mils): Horizontal Wire, length 350 mils
 [unconnected_wire_endpoint]: Unconnected wire endpoint
     ; warning
-    @(3900 mils, 1900 mils): Horizontal Wire, length 600 mils
+    @(4150 mils, 1900 mils): Horizontal Wire, length 350 mils
 [footprint_link_issues]: The current configuration does not include the footprint library 'Peak_Control_HAT'
     ; warning
     @(6900 mils, 1550 mils): Symbol U1 [TPS272C45C]
@@ -181,7 +154,7 @@ Report includes: Errors, Warnings, Exclusions
     ; warning
     @(8600 mils, 1100 mils): Vertical Wire, length 50 mils
 
- ** ERC messages: 58  Errors 52  Warnings 6
+ ** ERC messages: 49  Errors 43  Warnings 6
 
  ** Ignored checks:
     - Global label only appears once in the schematic
