@@ -1,0 +1,450 @@
+EESchema Schematic File Version 4
+LIBS:power
+LIBS:device
+LIBS:Connector_Generic
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+Sheet 1 1
+Title "Peak Control HAT SSR Rev A - Power Output Core"
+Date "2026-08-27"
+Rev "A1-DRAFT"
+Comp "Peak Projections"
+Comment1 "24V input protection + 4x isolated Omron G3VM-61GR2 outputs"
+Comment2 "G3VM devices represented as 4-pin generic symbols pending final custom symbol/footprint verification"
+$EndDescr
+Text Notes 650 600 0 100 ~ 20
+24V FIELD INPUT / PROTECTION
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 1
+P 1200 1100
+F 0 "J2" H 1118 1317 50 0000 C CNN
+F 1 "24V_IN" H 1118 1226 50 0000 C CNN
+	1    1200 1100
+	-1 0 0 -1
+$EndComp
+$Comp
+L Device:Fuse F1
+U 1 1 2
+P 1850 1100
+F 0 "F1" V 1653 1100 50 0000 C CNN
+F 1 "3A" V 1744 1100 50 0000 C CNN
+	1    1850 1100
+	0 1 1 0
+$EndComp
+$Comp
+L Device:D_TVS D1
+U 1 1 3
+P 2450 1450
+F 0 "D1" V 2404 1529 50 0000 L CNN
+F 1 "SMBJ33A" V 2495 1529 50 0000 L CNN
+	1    2450 1450
+	0 1 1 0
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 4
+P 3000 1450
+F 0 "C1" H 3115 1496 50 0000 L CNN
+F 1 "47uF/50V" H 3115 1405 50 0000 L CNN
+	1    3000 1450
+	1 0 0 -1
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5
+P 3800 1450
+F 0 "C2" H 3915 1496 50 0000 L CNN
+F 1 "1uF/50V" H 3915 1405 50 0000 L CNN
+	1    3800 1450
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	1400 1100 1700 1100
+Wire Wire Line
+	2000 1100 4400 1100
+Text Label 4050 1100 0 50 ~ 0
++24V_FIELD
+Wire Wire Line
+	1400 1200 1400 1800
+Wire Wire Line
+	1400 1800 4400 1800
+Text Label 4000 1800 0 50 ~ 0
+FIELD_GND
+Wire Wire Line
+	2450 1300 2450 1100
+Wire Wire Line
+	2450 1600 2450 1800
+Wire Wire Line
+	3000 1300 3000 1100
+Wire Wire Line
+	3000 1600 3000 1800
+Wire Wire Line
+	3800 1300 3800 1100
+Wire Wire Line
+	3800 1600 3800 1800
+Text Notes 650 2250 0 100 ~ 20
+GPIO / SSR INPUT SIDE
+Text Notes 750 2500 0 55 ~ 0
+Each GPIO drives the G3VM input LED through 390R. Pi-side GND is isolated from the 24V field side by the PhotoMOS relay.
+Text Notes 750 2700 0 55 ~ 0
+OUT1 = GPIO16 / physical pin 36   OUT2 = GPIO19 / pin 35   OUT3 = GPIO22 / pin 15   OUT4 = GPIO23 / pin 16
+$Comp
+L Device:R R11
+U 1 1 11
+P 1800 3150
+F 0 "R11" V 1593 3150 50 0000 C CNN
+F 1 "390R" V 1684 3150 50 0000 C CNN
+	1    1800 3150
+	0 1 1 0
+$EndComp
+Text Label 850 3150 0 50 ~ 0
+GPIO16_OUT1
+Wire Wire Line
+	850 3150 1650 3150
+$Comp
+L Connector_Generic:Conn_01x04 U1
+U 1 1 12
+P 2650 3250
+F 0 "U1" H 2730 3242 50 0000 L CNN
+F 1 "G3VM-61GR2" H 2730 3151 50 0000 L CNN
+	1    2650 3250
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	1950 3150 2450 3150
+Text Label 2050 3250 0 50 ~ 0
+PI_GND
+Wire Wire Line
+	2050 3250 2450 3250
+Text Label 2050 3350 0 50 ~ 0
++24V_FIELD
+Wire Wire Line
+	2050 3350 2450 3350
+Text Label 2050 3450 0 50 ~ 0
+OUT1_SW
+Wire Wire Line
+	2050 3450 2450 3450
+$Comp
+L Device:D D11
+U 1 1 13
+P 3400 3550
+F 0 "D11" V 3354 3630 50 0000 L CNN
+F 1 "1N4007" V 3445 3630 50 0000 L CNN
+	1    3400 3550
+	0 1 1 0
+$EndComp
+Text Label 3400 3250 0 50 ~ 0
+OUT1_SW
+Wire Wire Line
+	3400 3250 3400 3400
+Text Label 3400 3900 0 50 ~ 0
+FIELD_GND
+Wire Wire Line
+	3400 3700 3400 3900
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 14
+P 4250 3500
+F 0 "J3" H 4330 3492 50 0000 L CNN
+F 1 "PROJECTOR_SW24V_GND" H 4330 3401 50 0000 L CNN
+	1    4250 3500
+	1 0 0 -1
+$EndComp
+Text Label 3700 3500 0 50 ~ 0
+OUT1_SW
+Wire Wire Line
+	3700 3500 4050 3500
+Text Label 3650 3600 0 50 ~ 0
+FIELD_GND
+Wire Wire Line
+	3650 3600 4050 3600
+$Comp
+L Device:R R12
+U 1 1 21
+P 5650 3150
+F 0 "R12" V 5443 3150 50 0000 C CNN
+F 1 "390R" V 5534 3150 50 0000 C CNN
+	1    5650 3150
+	0 1 1 0
+$EndComp
+Text Label 4700 3150 0 50 ~ 0
+GPIO19_OUT2
+Wire Wire Line
+	4700 3150 5500 3150
+$Comp
+L Connector_Generic:Conn_01x04 U2
+U 1 1 22
+P 6500 3250
+F 0 "U2" H 6580 3242 50 0000 L CNN
+F 1 "G3VM-61GR2" H 6580 3151 50 0000 L CNN
+	1    6500 3250
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	5800 3150 6300 3150
+Text Label 5900 3250 0 50 ~ 0
+PI_GND
+Wire Wire Line
+	5900 3250 6300 3250
+Text Label 5900 3350 0 50 ~ 0
++24V_FIELD
+Wire Wire Line
+	5900 3350 6300 3350
+Text Label 5900 3450 0 50 ~ 0
+OUT2_SW
+Wire Wire Line
+	5900 3450 6300 3450
+$Comp
+L Device:D D12
+U 1 1 23
+P 7250 3550
+F 0 "D12" V 7204 3630 50 0000 L CNN
+F 1 "1N4007" V 7295 3630 50 0000 L CNN
+	1    7250 3550
+	0 1 1 0
+$EndComp
+Text Label 7250 3250 0 50 ~ 0
+OUT2_SW
+Wire Wire Line
+	7250 3250 7250 3400
+Text Label 7250 3900 0 50 ~ 0
+FIELD_GND
+Wire Wire Line
+	7250 3700 7250 3900
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 24
+P 8100 3500
+F 0 "J4" H 8180 3492 50 0000 L CNN
+F 1 "VIEWER_SW24V_GND" H 8180 3401 50 0000 L CNN
+	1    8100 3500
+	1 0 0 -1
+$EndComp
+Text Label 7550 3500 0 50 ~ 0
+OUT2_SW
+Wire Wire Line
+	7550 3500 7900 3500
+Text Label 7500 3600 0 50 ~ 0
+FIELD_GND
+Wire Wire Line
+	7500 3600 7900 3600
+$Comp
+L Device:R R13
+U 1 1 31
+P 1800 4650
+F 0 "R13" V 1593 4650 50 0000 C CNN
+F 1 "390R" V 1684 4650 50 0000 C CNN
+	1    1800 4650
+	0 1 1 0
+$EndComp
+Text Label 850 4650 0 50 ~ 0
+GPIO22_OUT3
+Wire Wire Line
+	850 4650 1650 4650
+$Comp
+L Connector_Generic:Conn_01x04 U3
+U 1 1 32
+P 2650 4750
+F 0 "U3" H 2730 4742 50 0000 L CNN
+F 1 "G3VM-61GR2" H 2730 4651 50 0000 L CNN
+	1    2650 4750
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	1950 4650 2450 4650
+Text Label 2050 4750 0 50 ~ 0
+PI_GND
+Wire Wire Line
+	2050 4750 2450 4750
+Text Label 2050 4850 0 50 ~ 0
++24V_FIELD
+Wire Wire Line
+	2050 4850 2450 4850
+Text Label 2050 4950 0 50 ~ 0
+OUT3_SW
+Wire Wire Line
+	2050 4950 2450 4950
+$Comp
+L Device:D D13
+U 1 1 33
+P 3400 5050
+F 0 "D13" V 3354 5130 50 0000 L CNN
+F 1 "1N4007" V 3445 5130 50 0000 L CNN
+	1    3400 5050
+	0 1 1 0
+$EndComp
+Text Label 3400 4750 0 50 ~ 0
+OUT3_SW
+Wire Wire Line
+	3400 4750 3400 4900
+Text Label 3400 5400 0 50 ~ 0
+FIELD_GND
+Wire Wire Line
+	3400 5200 3400 5400
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 34
+P 4250 5000
+F 0 "J5" H 4330 4992 50 0000 L CNN
+F 1 "AUX1_SW24V_GND" H 4330 4901 50 0000 L CNN
+	1    4250 5000
+	1 0 0 -1
+$EndComp
+Text Label 3700 5000 0 50 ~ 0
+OUT3_SW
+Wire Wire Line
+	3700 5000 4050 5000
+Text Label 3650 5100 0 50 ~ 0
+FIELD_GND
+Wire Wire Line
+	3650 5100 4050 5100
+$Comp
+L Device:R R14
+U 1 1 41
+P 5650 4650
+F 0 "R14" V 5443 4650 50 0000 C CNN
+F 1 "390R" V 5534 4650 50 0000 C CNN
+	1    5650 4650
+	0 1 1 0
+$EndComp
+Text Label 4700 4650 0 50 ~ 0
+GPIO23_OUT4
+Wire Wire Line
+	4700 4650 5500 4650
+$Comp
+L Connector_Generic:Conn_01x04 U4
+U 1 1 42
+P 6500 4750
+F 0 "U4" H 6580 4742 50 0000 L CNN
+F 1 "G3VM-61GR2" H 6580 4651 50 0000 L CNN
+	1    6500 4750
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	5800 4650 6300 4650
+Text Label 5900 4750 0 50 ~ 0
+PI_GND
+Wire Wire Line
+	5900 4750 6300 4750
+Text Label 5900 4850 0 50 ~ 0
++24V_FIELD
+Wire Wire Line
+	5900 4850 6300 4850
+Text Label 5900 4950 0 50 ~ 0
+OUT4_SW
+Wire Wire Line
+	5900 4950 6300 4950
+$Comp
+L Device:D D14
+U 1 1 43
+P 7250 5050
+F 0 "D14" V 7204 5130 50 0000 L CNN
+F 1 "1N4007" V 7295 5130 50 0000 L CNN
+	1    7250 5050
+	0 1 1 0
+$EndComp
+Text Label 7250 4750 0 50 ~ 0
+OUT4_SW
+Wire Wire Line
+	7250 4750 7250 4900
+Text Label 7250 5400 0 50 ~ 0
+FIELD_GND
+Wire Wire Line
+	7250 5200 7250 5400
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 44
+P 8100 5000
+F 0 "J6" H 8180 4992 50 0000 L CNN
+F 1 "AUX2_SW24V_GND" H 8180 4901 50 0000 L CNN
+	1    8100 5000
+	1 0 0 -1
+$EndComp
+Text Label 7550 5000 0 50 ~ 0
+OUT4_SW
+Wire Wire Line
+	7550 5000 7900 5000
+Text Label 7500 5100 0 50 ~ 0
+FIELD_GND
+Wire Wire Line
+	7500 5100 7900 5100
+Text Notes 650 6000 0 100 ~ 20
+I2C EXPANSION
+$Comp
+L Connector_Generic:Conn_01x04 J11
+U 1 1 51
+P 1750 6450
+F 0 "J11" H 1668 6767 50 0000 C CNN
+F 1 "I2C_EXPANSION" H 1668 6676 50 0000 C CNN
+	1    1750 6450
+	-1 0 0 -1
+$EndComp
+Text Label 2250 6350 0 50 ~ 0
++3V3_PI
+Text Label 2250 6450 0 50 ~ 0
+PI_GND
+Text Label 2250 6550 0 50 ~ 0
+I2C_SDA_GPIO2
+Text Label 2250 6650 0 50 ~ 0
+I2C_SCL_GPIO3
+Wire Wire Line
+	1950 6350 2900 6350
+Wire Wire Line
+	1950 6450 2900 6450
+Wire Wire Line
+	1950 6550 2900 6550
+Wire Wire Line
+	1950 6650 2900 6650
+$Comp
+L Device:R R21
+U 1 1 52
+P 3600 6250
+F 0 "R21" H 3670 6296 50 0000 L CNN
+F 1 "DNP 4.7k SDA PU" H 3670 6205 50 0000 L CNN
+	1    3600 6250
+	1 0 0 -1
+$EndComp
+$Comp
+L Device:R R22
+U 1 1 53
+P 4550 6250
+F 0 "R22" H 4620 6296 50 0000 L CNN
+F 1 "DNP 4.7k SCL PU" H 4620 6205 50 0000 L CNN
+	1    4550 6250
+	1 0 0 -1
+$EndComp
+$Comp
+L Device:R R23
+U 1 1 54
+P 3600 6650
+F 0 "R23" V 3393 6650 50 0000 C CNN
+F 1 "0R/optional 33-100R SDA" V 3484 6650 50 0000 C CNN
+	1    3600 6650
+	0 1 1 0
+$EndComp
+$Comp
+L Device:R R24
+U 1 1 55
+P 4550 6850
+F 0 "R24" V 4343 6850 50 0000 C CNN
+F 1 "0R/optional 33-100R SCL" V 4434 6850 50 0000 C CNN
+	1    4550 6850
+	0 1 1 0
+$EndComp
+Text Notes 650 7350 0 55 ~ 0
+I2C terminal pin order: 1=3V3, 2=GND, 3=SDA, 4=SCL. Pull-ups normally DNP; Pi already provides pull-ups. Keep cable short.
+Text Notes 5700 6000 0 100 ~ 20
+RETAINED FUNCTIONS / NEXT SHEET WORK
+Text Notes 5800 6300 0 55 ~ 0
+Proof inputs: GPIO24 + GPIO25 with isolated/conditioned field inputs.
+Text Notes 5800 6500 0 55 ~ 0
+IR TX: GPIO18 + GPIO13 through output buffers; terminals PWR/GND/SIG.
+Text Notes 5800 6700 0 55 ~ 0
+Fan: GPIO12 control candidate, GPIO26 tach; 5V/GND/TACH terminal.
+Text Notes 5800 6900 0 55 ~ 0
+HAT ID GPIO0/GPIO1 reserved. TPS SEL/FLT GPIO5/6/20/21 now free/reserved.
+Text Notes 5800 7150 0 55 ~ 0
+IMPORTANT: verify G3VM-61GR2 exact pin numbering and selected SOP-4 land pattern against current Omron datasheet before fabrication.
+$EndSCHEMATC
