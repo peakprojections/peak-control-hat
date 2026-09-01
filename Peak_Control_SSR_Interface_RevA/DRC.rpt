@@ -1,32 +1,8 @@
-** Drc report for Peak_Control_HAT_SSR_RevA.kicad_pcb **
-** Created on 2026-08-31T20:38:25 **
+** Drc report for Peak_Control_SSR_Interface_RevA.kicad_pcb **
+** Created on 2026-09-01T19:42:26 **
 ** Report includes: Errors, Warnings **
 
-** Found 8 DRC violations **
-[lib_footprint_mismatch]: Footprint 'MountingHole_2.7mm_M2.5' does not match copy in library 'MountingHole'
-    Local override; warning
-    @(61.5000 mm, 3.5000 mm): Footprint <no reference designator>
-[lib_footprint_mismatch]: Footprint 'MountingHole_3.2mm_M3' does not match copy in library 'MountingHole'
-    Local override; warning
-    @(16.5000 mm, 47.0000 mm): Footprint <no reference designator>
-[lib_footprint_mismatch]: Footprint 'MountingHole_3.2mm_M3' does not match copy in library 'MountingHole'
-    Local override; warning
-    @(16.5000 mm, 15.0000 mm): Footprint <no reference designator>
-[lib_footprint_mismatch]: Footprint 'MountingHole_3.2mm_M3' does not match copy in library 'MountingHole'
-    Local override; warning
-    @(48.5000 mm, 15.0000 mm): Footprint <no reference designator>
-[lib_footprint_mismatch]: Footprint 'MountingHole_2.7mm_M2.5' does not match copy in library 'MountingHole'
-    Local override; warning
-    @(61.5000 mm, 52.5000 mm): Footprint <no reference designator>
-[lib_footprint_mismatch]: Footprint 'MountingHole_2.7mm_M2.5' does not match copy in library 'MountingHole'
-    Local override; warning
-    @(3.5000 mm, 52.5000 mm): Footprint <no reference designator>
-[lib_footprint_mismatch]: Footprint 'MountingHole_2.7mm_M2.5' does not match copy in library 'MountingHole'
-    Local override; warning
-    @(3.5000 mm, 3.5000 mm): Footprint <no reference designator>
-[lib_footprint_mismatch]: Footprint 'MountingHole_3.2mm_M3' does not match copy in library 'MountingHole'
-    Local override; warning
-    @(48.5000 mm, 47.0000 mm): Footprint <no reference designator>
+** Found 0 DRC violations **
 
 ** Found 0 unconnected pads **
 

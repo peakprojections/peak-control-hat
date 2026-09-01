@@ -3625,7 +3625,7 @@
 		(uuid "1f09d5f4-f957-4cda-bc83-a8cd4762b2c6")
 	)
 	(label "GPIO_IN3"
-		(at 236.22 41.91 0)
+		(at 236.22 36.83 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3645,7 +3645,7 @@
 		(uuid "324ef6ad-6d25-482f-858e-87244d82c13e")
 	)
 	(label "PI_GND"
-		(at 236.22 34.29 0)
+		(at 236.22 44.45 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3825,7 +3825,7 @@
 		(uuid "ccb4ea7e-b377-4e19-b315-05b478e19cce")
 	)
 	(label "GPIO_IN4"
-		(at 236.22 44.45 0)
+		(at 236.22 34.29 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3855,7 +3855,7 @@
 		(uuid "df08f316-0ff2-4e3e-91ca-e906aa097d18")
 	)
 	(label "GPIO_IN1"
-		(at 236.22 36.83 0)
+		(at 236.22 41.91 0)
 		(effects
 			(font
 				(size 1.27 1.27)
