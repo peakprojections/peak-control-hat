@@ -2,4 +2,5 @@
 	(version 7)
 	(lib (name "Omron") (type "KiCad") (uri "${KIPRJMOD}/libraries/footprints/Omron.pretty") (options "") (descr ""))
 	(lib (name "Murata") (type "KiCad") (uri "${KIPRJMOD}/libraries/footprints/Murata.pretty") (options "") (descr ""))
+	(lib (name "JLC") (type "KiCad") (uri "${KIPRJMOD}/libraries/JLC.pretty") (options "") (descr ""))
 )
