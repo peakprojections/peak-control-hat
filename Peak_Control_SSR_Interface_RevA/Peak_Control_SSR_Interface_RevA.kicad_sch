@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Peak Control SSR Interface Rev A1.1 - Power Output Core")
-		(date "2026-08-27")
-		(rev "A1-DRAFT")
+		(date "2026-09-01")
+		(rev "A1.1")
 		(company "Peak Projections")
 		(comment 1 "24V input protection + 4x isolated Omron G3VM-61GR2 outputs")
 	)
@@ -2603,9 +2603,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "RETAINED FUNCTIONS / NEXT SHEET WORK"
+	(text "NOTES FOR FUTURE REVISIONS"
 		(exclude_from_sim no)
-		(at 34.798 147.574 0)
+		(at 36.322 159.004 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -2629,7 +2629,7 @@
 	)
 	(text "5V Regulator from 24V Supply - Can provide fan supply or power for MC/Pi (need 6A for Pi)"
 		(exclude_from_sim no)
-		(at 37.338 159.004 0)
+		(at 37.084 168.656 0)
 		(effects
 			(font
 				(size 1.397 1.397)
@@ -2679,7 +2679,7 @@
 	)
 	(text "Move SSR Resistor Networks to Board Center, Provide Jumpers For 3.3v/5v Selection "
 		(exclude_from_sim no)
-		(at 37.338 155.194 0)
+		(at 37.084 164.846 0)
 		(effects
 			(font
 				(size 1.397 1.397)
