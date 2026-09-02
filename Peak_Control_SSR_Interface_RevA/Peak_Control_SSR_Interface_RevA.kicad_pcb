@@ -8,10 +8,11 @@
 	)
 	(paper "A4")
 	(title_block
-		(title "Peak Control HAT SSR Rev A - Mechanical / Placement Skeleton")
-		(date "2026-08-27")
-		(rev "A1-DRAFT")
+		(title "Peak Control SSR Interface Rev A1.1")
+		(date "2026-09-01")
+		(rev "A1.1")
 		(company "Peak Projections")
+		(comment 1 "Mechanical / Placement Skeleton")
 	)
 	(layers
 		(0 "F.Cu" signal)
@@ -10016,8 +10017,8 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "REV A1-DRAFT / G3VM-61GR2"
-		(at 7.5 27.5 270)
+	(gr_text "REV A1.1"
+		(at 8.5 19 270)
 		(layer "F.SilkS")
 		(uuid "de375136-3c01-4702-a6fe-fc90f42acab9")
 		(effects

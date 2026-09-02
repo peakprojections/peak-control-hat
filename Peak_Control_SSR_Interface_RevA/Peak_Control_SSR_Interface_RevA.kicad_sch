@@ -5,7 +5,7 @@
 	(uuid "0222ff1f-ec51-45af-92f1-d42cdfa08119")
 	(paper "A4")
 	(title_block
-		(title "Peak Control SSR Interface Rev A - Power Output Core")
+		(title "Peak Control SSR Interface Rev A1.1 - Power Output Core")
 		(date "2026-08-27")
 		(rev "A1-DRAFT")
 		(company "Peak Projections")
@@ -2627,6 +2627,17 @@
 		)
 		(uuid "753ed43a-4518-4858-83e6-44560058de72")
 	)
+	(text "5V Regulator from 24V Supply - Can provide fan supply or power for MC/Pi (need 6A for Pi)"
+		(exclude_from_sim no)
+		(at 37.338 159.004 0)
+		(effects
+			(font
+				(size 1.397 1.397)
+			)
+			(justify left bottom)
+		)
+		(uuid "927b876d-cc5b-43e9-80df-b51612a872a7")
+	)
 	(text "Input Connector"
 		(exclude_from_sim no)
 		(at 232.918 27.178 0)
@@ -2666,7 +2677,7 @@
 		)
 		(uuid "cd0f0006-6766-452e-8a6c-39c29d3a0924")
 	)
-	(text "5V Regulator from 24V Supply - Can provide fan supply or power for MC/Pi (need 6A for Pi)"
+	(text "Move SSR Resistor Networks to Board Center, Provide Jumpers For 3.3v/5v Selection "
 		(exclude_from_sim no)
 		(at 37.338 155.194 0)
 		(effects
