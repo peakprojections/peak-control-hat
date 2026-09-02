@@ -1,0 +1,22 @@
+Function,BCM GPIO,Pi Physical Pin,Notes
+OUT1 Enable,16,36,Default Projector 1; GPIO high commands SSR output on
+OUT2 Enable,19,35,Default Viewer 1; GPIO high commands SSR output on
+OUT3 Enable,22,15,Default Projector 2 or Aux scheduled channel
+OUT4 Enable,23,16,Default Viewer 2 or Aux reboot/normally-on channel
+Proof Input 1,24,18,Projector current proof input
+Proof Input 2,25,22,Future field input
+IR 1 TX,18,12,Hardware PWM capable
+IR 2 TX,13,33,Hardware PWM capable
+Fan Control,12,32,PWM/control candidate
+Fan Tach,26,37,Tach input candidate
+I2C SDA,2,3,Shared expansion bus; route to terminal block
+I2C SCL,3,5,Shared expansion bus; route to terminal block
+HAT ID SDA,0,27,Reserved for future HAT EEPROM
+HAT ID SCL,1,28,Reserved for future HAT EEPROM
+Reserved / IR RX candidate,17,11,Keep available for future IR receiver or expansion
+Reserved,4,7,Available future GPIO
+Reserved,5,29,Freed from TPS U1 SEL; available future GPIO
+Reserved,6,31,Freed from TPS U2 SEL; available future GPIO
+Reserved,20,38,Freed from TPS U1 FLT; available future GPIO
+Reserved,21,40,Freed from TPS U2 FLT; available future GPIO
+Reserved,27,13,Available future GPIO
