@@ -1,16 +1,8 @@
 ** Drc report for Peak_Control_SSR_Interface_RevA.kicad_pcb **
-** Created on 2026-09-02T17:46:29 **
+** Created on 2026-09-02T18:32:29 **
 ** Report includes: Errors, Warnings **
 
-** Found 2 DRC violations **
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; warning
-    @(22.9600 mm, 68.6500 mm): Segment of F1 on f.silkscreen
-    @(22.5000 mm, 65.0000 mm): PTH pad 1 [/+24V_FIELD] of F1
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; warning
-    @(44.0600 mm, 61.2500 mm): Segment of F1 on f.silkscreen
-    @(44.5000 mm, 65.0000 mm): PTH pad 2 [Net-(J2-Pin_1)] of F1
+** Found 0 DRC violations **
 
 ** Found 0 unconnected pads **
 

@@ -3967,7 +3967,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+		(property "Footprint" "JLC:CONN-TH_YC0220500000G"
 			(at 30.48 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -4959,7 +4959,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+		(property "Footprint" "JLC:CONN-TH_YC0220500000G"
 			(at 120.65 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -5459,7 +5459,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+		(property "Footprint" "JLC:CONN-TH_YC0220500000G"
 			(at 255.27 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -5959,7 +5959,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+		(property "Footprint" "JLC:CONN-TH_YC0220500000G"
 			(at 123.19 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -6459,7 +6459,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+		(property "Footprint" "JLC:CONN-TH_YC0220500000G"
 			(at 255.27 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -7243,7 +7243,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-5-5.08_1x05_P5.08mm_Horizontal"
+		(property "Footprint" "JLC:CONN-TH_5P-P5.08_DIBO_DB128V-5.08-5P-GN-S"
 			(at 255.27 39.37 0)
 			(hide yes)
 			(show_name no)
