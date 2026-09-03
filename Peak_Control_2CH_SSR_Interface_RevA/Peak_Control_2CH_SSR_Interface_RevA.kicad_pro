@@ -616,7 +616,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "fabrication/gerbers/",
       "specctra_dsn": "",
       "step": "",
       "vrml": ""

@@ -1,0 +1,23 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,10.0.5*%
+%TF.CreationDate,2026-09-02T21:09:04-04:00*%
+%TF.ProjectId,Peak_Control_2CH_SSR_Interface_RevA,5065616b-5f43-46f6-9e74-726f6c5f3243,A1.1*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Profile,NP*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 10.0.5) date 2026-09-02 21:09:04*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%TA.AperFunction,Profile*%
+%ADD10C,0.050000*%
+%TD*%
+G04 APERTURE END LIST*
+D10*
+X0Y-5000000D02*
+X98000000Y-5000000D01*
+X98000000Y-70000000D01*
+X0Y-70000000D01*
+X0Y-5000000D01*
+M02*

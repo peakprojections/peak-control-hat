@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(general
-		(thickness 1.599998)
+		(thickness 0.16)
 		(legacy_teardrops no)
 	)
 	(paper "A4")
@@ -19,8 +19,12 @@
 		(4 "In1.Cu" power)
 		(6 "In2.Cu" power)
 		(2 "B.Cu" signal)
+		(13 "F.Paste" user)
+		(15 "B.Paste" user)
 		(5 "F.SilkS" user "f.silkscreen")
 		(7 "B.SilkS" user "b.silkscreen")
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
 		(25 "Edge.Cuts" user)
 		(27 "Margin" user)
 		(31 "F.CrtYd" user "F.Courtyard")
@@ -31,13 +35,20 @@
 			(layer "F.SilkS"
 				(type "Top Silk Screen")
 			)
+			(layer "F.Paste"
+				(type "Top Solder Paste")
+			)
+			(layer "F.Mask"
+				(type "Top Solder Mask")
+				(thickness 0.01)
+			)
 			(layer "F.Cu"
 				(type "copper")
 				(thickness 0.035)
 			)
 			(layer "dielectric 1"
-				(type "core")
-				(thickness 0.486666)
+				(type "prepreg")
+				(thickness 0)
 				(material "FR4")
 				(epsilon_r 4.5)
 				(loss_tangent 0.02)
@@ -47,8 +58,8 @@
 				(thickness 0.035)
 			)
 			(layer "dielectric 2"
-				(type "prepreg")
-				(thickness 0.486666)
+				(type "core")
+				(thickness 0)
 				(material "FR4")
 				(epsilon_r 4.5)
 				(loss_tangent 0.02)
@@ -58,8 +69,8 @@
 				(thickness 0.035)
 			)
 			(layer "dielectric 3"
-				(type "core")
-				(thickness 0.486666)
+				(type "prepreg")
+				(thickness 0)
 				(material "FR4")
 				(epsilon_r 4.5)
 				(loss_tangent 0.02)
@@ -67,6 +78,13 @@
 			(layer "B.Cu"
 				(type "copper")
 				(thickness 0.035)
+			)
+			(layer "B.Mask"
+				(type "Bottom Solder Mask")
+				(thickness 0.01)
+			)
+			(layer "B.Paste"
+				(type "Bottom Solder Paste")
 			)
 			(layer "B.SilkS"
 				(type "Bottom Silk Screen")
@@ -90,6 +108,7 @@
 		)
 		(capping no)
 		(filling no)
+		(zone_defaults)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
@@ -119,12 +138,12 @@
 			(hidednponfab no)
 			(sketchdnponfab yes)
 			(crossoutdnponfab yes)
-			(subtractmaskfromsilk no)
+			(subtractmaskfromsilk yes)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "fabrication/gerbers/")
 		)
 	)
 	(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
